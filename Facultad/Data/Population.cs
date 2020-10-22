@@ -8,7 +8,7 @@ namespace Facultad.Data
 {
     public static class Population
     {
-        public static void PopulationDB(ApplicationBuilder app)
+        public static void PopulationDB(IApplicationBuilder app)
         {
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
