@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "c4dea8e4-1475-4e77-9425-f65ccc709c6b",
+		"name": "CareerTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Subject Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Add Subject Student"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subject Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64691/ManageCareers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64691",
+					"path": [
+						"ManageCareers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Subject Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idStudent\":2,\"idSubject\":2,\"idCareer\":2,\"status\":\"InProgress\",\"average\":4.00}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:64691/ManageCareers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64691",
+					"path": [
+						"ManageCareers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Subject Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idStudentSubject\":2,\"idStudent\":2,\"idSubject\":2,\"idCareer\":2,\"status\":\"InProgress\",\"average\":9.00}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:64691/ManageCareers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64691",
+					"path": [
+						"ManageCareers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

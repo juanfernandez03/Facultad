@@ -17,8 +17,8 @@ namespace Facultad.Services
             _context = context;
         }
 
-        public StudentSubject AddStudentStatus(StudentSubject studentSubject)
-        {
+        public StudentSubject AddStudentSubject(StudentSubject studentSubject)
+        {            
             _context.Add(studentSubject);
             _context.SaveChanges();
             return studentSubject;
